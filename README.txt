@@ -1,1 +1,1 @@
-This the traditional CONNECTFOUR game.
+This is the traditional CONNECT FOUR game.
