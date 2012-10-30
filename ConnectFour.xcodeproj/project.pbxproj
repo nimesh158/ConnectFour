@@ -1457,6 +1457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steven Mesko (RKPZHZH2E6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1466,6 +1467,7 @@
 				GCC_PREFIX_HEADER = ConnectFour_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -1473,6 +1475,9 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ConnectFour;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6889178A-B32A-45E2-9AED-8FB26C21A836";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -1481,6 +1486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1488,6 +1494,7 @@
 				GCC_PREFIX_HEADER = ConnectFour_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -1495,6 +1502,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ConnectFour;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
@@ -1509,6 +1518,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = "cocos2d libraries";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1522,6 +1532,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = "cocos2d libraries";
+				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
 			name = Release;
